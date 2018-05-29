@@ -4,7 +4,8 @@
   "description": "General news website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack index.js bundle.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,6 @@
   },
   "homepage": "https://github.com/jmocana2/Myhourglass#readme",
   "devDependencies": {
-    "webpack": "^4.10.0"
+    "webpack": "3.8.1"    
   }
 }
