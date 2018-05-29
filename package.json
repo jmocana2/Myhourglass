@@ -1,0 +1,30 @@
+{
+  "name": "myhourglass",
+  "version": "1.0.0",
+  "description": "General news website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmocana2/Myhourglass.git"
+  },
+  "keywords": [
+    "news",
+    "sports",
+    "politic",
+    "economy",
+    "culture",
+    "others"
+  ],
+  "author": "jmocana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmocana2/Myhourglass/issues"
+  },
+  "homepage": "https://github.com/jmocana2/Myhourglass#readme",
+  "devDependencies": {
+    "webpack": "^4.10.0"
+  }
+}
