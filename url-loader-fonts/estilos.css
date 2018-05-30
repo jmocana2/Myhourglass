@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Ubuntu Medium';
+  src: url('./fonts/UbuntuMedium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+
+body{
+  background-color:peru;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 40px;
+  font-family: 'Ubuntu Medium', 'sans-serif';
+}
