@@ -17,7 +17,8 @@
     "build:videos": "webpack --config ./url-loader-videos/webpack.config.js",
     "build:json": "webpack --config ./url-loader-json/webpack.config.js",
     "build:react": "webpack --config ./react/webpack.config.js",
-    "build:styled-components": "webpack --config ./styled-components/webpack.config.js --watch"
+    "build:styled-components": "webpack --config ./styled-components/webpack.config.js --watch",
+    "start": "webpack-dev-server --config ./webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
