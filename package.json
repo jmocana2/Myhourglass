@@ -16,7 +16,8 @@
     "build:fonts": "webpack --config ./url-loader-fonts/webpack.config.js",
     "build:videos": "webpack --config ./url-loader-videos/webpack.config.js",
     "build:json": "webpack --config ./url-loader-json/webpack.config.js",
-    "build:react": "webpack --config ./react/webpack.config.js"
+    "build:react": "webpack --config ./react/webpack.config.js",
+    "build:styled-components": "webpack --config ./styled-components/webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
@@ -54,6 +55,7 @@
   },
   "dependencies": {
     "react": "16.0.0",
-    "react-dom": "16.0.0"
+    "react-dom": "16.0.0",
+    "styled-components": "^3.3.0"
   }
 }
