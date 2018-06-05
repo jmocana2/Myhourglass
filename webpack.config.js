@@ -1,12 +1,19 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'index.js'),
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname,'dist'),
-    filename: 'bundle.js',
-    publicPath: './dist/'
+    filename: 'bundle.js'
+  },
+  devServer : {
+    port: 8080,
+    disableHostCheck: true,
+    hot: true,
+    contentBase: './dist/',
+    open: true
   },
   module: {
     rules: [
@@ -52,6 +59,7 @@ module.exports = {
     ]
   }, 
   plugins: [
-    new ExtractTextPlugin("css/[name].css")
+    new ExtractTextPlugin("css/[name].css"),
+    new webpack.HotModuleReplacementPlugin()
   ]
 }

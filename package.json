@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack index.js bundle.js",
+    "build_curso": "webpack index.js bundle.js",
     "build:local": "webpack",
     "build:external": "webpack --config ./external/webpack.config.js",
     "build:css": "webpack --config ./css-style-loader/webpack.config.js",
@@ -18,7 +18,8 @@
     "build:json": "webpack --config ./url-loader-json/webpack.config.js",
     "build:react": "webpack --config ./react/webpack.config.js",
     "build:styled-components": "webpack --config ./styled-components/webpack.config.js --watch",
-    "start": "webpack-dev-server --config ./webpack.config.js --watch"
+    "build": "webpack --watch --colors",
+    "start": "webpack-dev-server --progress --colors"
   },
   "repository": {
     "type": "git",
