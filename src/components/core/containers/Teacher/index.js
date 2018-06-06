@@ -1,8 +1,9 @@
 import React from 'react';
+import StyledTeacher from './styles'
 
 function Teacher(props){
   return (
-    <li>Nombre: {props.name}, Twitter: {props.twitter}</li>
+    <StyledTeacher>Nombre: {props.name}, Twitter: {props.twitter}</StyledTeacher>
   )
 }
 
