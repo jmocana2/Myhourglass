@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -60,6 +61,13 @@ module.exports = {
   }, 
   plugins: [
     new ExtractTextPlugin("css/[name].css"),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      hash: true,
+      title: 'My Hourglass',
+      myPageHeader: 'My Hourglass',
+      template: './src/index.html',
+      filename: './index.html' //relative to root of the application
+    })   
   ]
 }

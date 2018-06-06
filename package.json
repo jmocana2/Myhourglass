@@ -19,7 +19,9 @@
     "build:react": "webpack --config ./react/webpack.config.js",
     "build:styled-components": "webpack --config ./styled-components/webpack.config.js --watch",
     "build": "webpack --watch --colors",
-    "start": "webpack-dev-server --progress --colors"
+    "start": "webpack-dev-server --progress --colors",
+    "cosmos": "cosmos",
+    "cosmos:export": "cosmos-export"
   },
   "repository": {
     "type": "git",
@@ -49,7 +51,9 @@
     "css-loader": "0.28.7",
     "extract-text-webpack-plugin": "3.0.1",
     "file-loader": "1.1.5",
+    "html-webpack-plugin": "^3.2.0",
     "json-loader": "0.5.7",
+    "react-cosmos": "^4.4.0",
     "style-loader": "0.19.0",
     "url-loader": "0.6.2",
     "webpack": "3.8.1",
