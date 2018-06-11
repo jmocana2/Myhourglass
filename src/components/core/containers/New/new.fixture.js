@@ -23,6 +23,17 @@ export default [
       children: (
         <p><strong>Podemos añadir un children como propiedad</strong></p>
       )
-    },    
-  }
+    }
+  }, 
+  {
+    name: "Noticia router",
+    namespace: 'dashboard/news',
+    component: New,
+    url: '/about',
+    props: {
+      title: "Pedro Duque, ministro de Ciencia, Innovación y Universidades; Dolores Delgado, de Justicia",
+      description: "La nueva titular del Ministerio de Trabajo será Magdalena Valerio; Isabel Celaá se encargará de Educación",
+      author: "Alejandro Ciriza"
+    }
+  }  
 ];
