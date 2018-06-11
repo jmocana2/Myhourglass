@@ -1,0 +1,52 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "politic",
+      "news": [
+        {
+          "id": "1",
+          "title": "Pedro Duque, ministro de Ciencia, Innovación y Universidades; Dolores Delgado, de Justicia",
+          "description": "La nueva titular del Ministerio de Trabajo será Magdalena Valerio; Isabel Celaá se encargará de Educación",
+          "author": "Alejandro Ciriza"
+        },
+        {
+          "id": "2",
+          "title": "Cospedal no se descarta: “Es una decisión personal que tengo que tomar”",
+          "description": "La secretaria general del PP asegura que velará porque el proceso sea 'claro, rápido, eficaz y lo más representativo posible'",
+          "author": "Alejandro Ciriza"
+        },
+        {
+          "id": "3",
+          "title": "Feijóo evita aclarar si agotará la legislatura como prometió",
+          "description": "El presidente de la Xunta niega con ahínco la condena al PP por corrupción y atribuye la “mentira” a “los periódicos”",
+          "author": "Alejandro Ciriza"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "sports",
+      "news": [
+        {
+          "id": "1",
+          "title": "Muguruza - Sharapova en directo, Roland Garros en vivo",
+          "description": "Sigue en directo el partido de cuartos que se disputa a partir de las 14.00 en la pista central; a continuación, Nadal ante Schwartzman",
+          "author": "Alejandro Ciriza"
+        },
+        {
+          "id": "2",
+          "title": "Pedro Sánchez: “Vuestra trayectoria en Rusia será extraordinaria”",
+          "description": "El presidente del Gobierno entrega la Real Orden del Mérito Deportivo a Andrés Iniesta y despide a la selección española antes de viajar a Rusia",
+          "author": "Alejandro Ciriza"
+        },
+        {
+          "id": "3",
+          "title": "Cecchinato atormenta a Djokovic",
+          "description": "El desconocido italiano elimina al gigante serbio en los cuartos (6-3, 7-6, 1-6 y 7-6, en 3h 26m) y da la campanada. Se enfrentará en las semifinales al austriaco Thiem (6-4, 6-2 y 6-1 a Zverev, en 1h 50m)",
+          "author": "Alejandro Ciriza"
+        }
+      ]
+    }
+  ]
+}

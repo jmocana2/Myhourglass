@@ -27,11 +27,7 @@ module.exports = {
             presets: ['env', 'react']   
           }
         }
-      },
-      {
-        test: /\.json$/,
-        use: 'json-loader'
-      },
+      },    
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
