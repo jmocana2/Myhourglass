@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const StyledNew = styled.article`
-  background-color: #EAEAEA;
+  background-color: ${props => props.theme.secondaryColor};
   font-size: 20px;
-  color: #1A1A1A;
+  color: ${props => props.theme.primaryColor};
 `
 export default StyledNew
