@@ -59,6 +59,7 @@
     "react-cosmos-fetch-proxy": "^4.4.0",
     "react-cosmos-redux-proxy": "^4.4.0",
     "react-cosmos-router-proxy": "^4.4.0",
+    "react-cosmos-wrapper-proxy": "^1.4.0",
     "style-loader": "0.19.0",
     "url-loader": "0.6.2",
     "webpack": "3.8.1",

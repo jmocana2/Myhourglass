@@ -4343,6 +4343,13 @@ react-cosmos-voyager@^4.4.0:
     glob "^7.1.1"
     traverse "^0.6.6"
 
+react-cosmos-wrapper-proxy@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/react-cosmos-wrapper-proxy/-/react-cosmos-wrapper-proxy-1.4.0.tgz#e4685f1a2a59b85e78c73bad4322a6d439ba3479"
+  dependencies:
+    react "^16.4.0"
+    react-dom "^16.4.0"
+
 react-cosmos@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/react-cosmos/-/react-cosmos-4.4.0.tgz#d1187f1d56040f13964a424b6c32110c4bbf6753"
@@ -4400,6 +4407,15 @@ react-dom@16.0.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
+react-dom@^16.4.0:
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.1.tgz#7f8b0223b3a5fbe205116c56deb85de32685dad6"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+
 react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
@@ -4445,6 +4461,15 @@ react-router@^4.3.1:
 react@16.0.0:
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.0.0.tgz#ce7df8f1941b036f02b2cca9dbd0cb1f0e855e2d"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+
+react@^16.4.0:
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.1.tgz#de51ba5764b5dbcd1f9079037b862bd26b82fe32"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
