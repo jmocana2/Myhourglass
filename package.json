@@ -19,7 +19,8 @@
     "build:react": "webpack --config ./react/webpack.config.js",
     "build:styled-components": "webpack --config ./styled-components/webpack.config.js --watch",
     "build": "webpack --watch --colors",
-    "start": "webpack-dev-server --progress --colors",
+    "start": "webpack-dev-server --progress --colors --config ./webpack.dev.config.js",
+    "start:pro": "webpack-dev-server --progress --colors",
     "cosmos": "cosmos",
     "cosmos:export": "cosmos-export"
   },
