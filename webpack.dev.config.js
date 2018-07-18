@@ -2,12 +2,15 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
+console.log('generando modulos de desarrollo...');
+
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname,'dist'),
+    path: path.resolve(__dirname,'dist/'),
     filename: 'bundle.js'
   },
+  devtool: 'eval-source-map',
   devServer : {
     port: 8080,
     disableHostCheck: true,
