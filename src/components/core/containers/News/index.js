@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import New from '../New';
 import StyledSection from './styles';
+import HourGlass from '../../../../../assets/img/jpg/hourglass.jpg';
 
 class News extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class News extends Component {
           return (
             <StyledSection key={item.id} active={this.props.pressButon}>
               <h1>{item.name}</h1>
+              <img src={HourGlass} alt="HourGlass" />
               <ul>
                 {
                   item.news.map((item) => {
