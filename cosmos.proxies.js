@@ -5,6 +5,7 @@ import createWrapperProxy from "react-cosmos-wrapper-proxy";
 import configureStore from './src/configureStore';
 import { ThemeProvider } from 'styled-components';
 import { Theme } from './src/config/themes';
+import createBackgroundProxy from "react-cosmos-background-proxy";
 
 const ThemeProxy = createWrapperProxy({
   // Required
@@ -25,6 +26,7 @@ const ReduxProxy = createReduxProxy({
 export default [
   createRouterProxy(),
   ReduxProxy,
-  ThemeProxy
+  ThemeProxy,
+  createBackgroundProxy()
   // ...other proxies
 ];
