@@ -34,8 +34,12 @@ injectGlobal`
     font-style: normal;
   }
  `
-
 export const Theme = {
-  primaryColor: '#FF5676',
-  secondaryColor: '#333333'
+  darkPrimaryColor: '#2f3e9e',
+  primaryColor: '#3e50b4',
+  lightPrimaryColor: '#c4c9e8',
+  accentColor: '#df3ffa',
+  primaryText: '#202020',
+  secondaryText: '#747474',
+  dividerColor: '#bcbcbc'
 }  
