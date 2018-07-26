@@ -33,6 +33,15 @@ injectGlobal`
     font-weight: 700;
     font-style: normal;
   }
+
+  html {
+    font-size: 100%;
+  }
+
+  body{
+    font-size: 1rem;
+    line-height: 1.42857143;    
+  }
  `
 export const Theme = {
   darkPrimaryColor: '#2f3e9e',
