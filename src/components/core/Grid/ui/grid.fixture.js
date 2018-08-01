@@ -1,5 +1,7 @@
 import React from 'react';
-import Grid from './'
+import Grid from './';
+import New from '../../containers/New';
+
 
 const gridTemplateArea = [
   '"header header header header"',
@@ -10,9 +12,10 @@ const gridTemplateArea = [
   '"footer footer footer footer"'
 ]
 
-const confGrid = [
+const confGridArea = [
   {
-    area: "header"
+    area: "header",
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },
   {
     area: "highlight"
@@ -45,14 +48,78 @@ const confGrid = [
     area: "new9"
   },
   {
+    area: "news"
+  },  
+  {
     area: "footer"
   }  
+];
+
+const confGridRowColumns = [
+  {
+    gridColumn: "start_column / end_column",
+    gridRow: "start_header / start_highlight",
+    content: <New title="Prueba chunga ROW&amp;COLUMNS" description="No pongo la mano en el fuego" author="jmocana" />
+  },
+  {
+    gridColumn: "1 / 5",
+    gridRow: "2 / 3"
+  },
+  {
+    gridColumn: "1 / 2",
+    gridRow: "start_rows"
+  },
+  {
+    gridColumn: "2 / 3",
+    gridRow: "3 / 4"
+  },
+  {
+    gridColumn: "3 / 4",
+    gridRow: "3 / 4"
+  },
+  {
+    gridColumn: "4 / 5",
+    gridRow: "start_rows"
+  },
+  {
+    gridColumn: "1 / 3",
+    gridRow: "4 / 5"
+  },
+  {
+    gridColumn: "3 / 4",
+    gridRow: "4 / 5"
+  },
+  {
+    gridColumn: "4 / 5",
+    gridRow: "4 / 5"
+  },
+  {
+    gridColumn: "1 / 3",
+    gridRow: "5 / 6"
+  },
+  {
+    gridColumn: "3 / 4",
+    gridRow: "5 / 6"
+  },
+  {
+    gridColumn: "4 / 5",
+    gridRow: "5 / 6"
+  },  
+  {
+    gridColumn: "1 / 5",
+    gridRow: "start_footer / end_footer"
+  } 
 ];
 
 export default [
   {
     name: "Grid",
     component: Grid,
-    props: { confGrid, gridTemplateArea } 
+    props: { 
+      typeArea: true,
+      gridTemplateArea, 
+      confGridArea, 
+      confGridRowColumns
+    } 
   } 
 ];
