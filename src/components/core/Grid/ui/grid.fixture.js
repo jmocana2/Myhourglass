@@ -2,113 +2,46 @@ import React from 'react';
 import Grid from './';
 import New from '../../containers/New';
 
-
-const gridTemplateArea = [
-  '"header header header header"',
-  '"highlight highlight highlight highlight"',
-  '"new1 new2 new3 new4"',
-  '"new5 new5 new6 new7"',
-  '"new8 new8 news new9"',
-  '"footer footer footer footer"'
-]
-
-const confGridArea = [
+const dataGrid = [
   {
-    area: "header",
     content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },
   {
-    area: "highlight"
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },
   {
-    area: "new1"
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },
   {
-    area: "new2"
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },
   {
-    area: "new3"
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },
   {
-    area: "new4"
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },
   {
-    area: "new5"
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },
   {
-    area: "new6"
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },
   {
-    area: "new7"
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },
   {
-    area: "new8"
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },
   {
-    area: "new9"
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },
   {
-    area: "news"
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   },  
   {
-    area: "footer"
+    content: <New title="Prueba chunga AREA" description="No pongo la mano en el fuego" author="jmocana" />
   }  
-];
-
-const confGridRowColumns = [
-  {
-    gridColumn: "start_column / end_column",
-    gridRow: "start_header / start_highlight",
-    content: <New title="Prueba chunga ROW&amp;COLUMNS" description="No pongo la mano en el fuego" author="jmocana" />
-  },
-  {
-    gridColumn: "1 / 5",
-    gridRow: "2 / 3"
-  },
-  {
-    gridColumn: "1 / 2",
-    gridRow: "start_rows"
-  },
-  {
-    gridColumn: "2 / 3",
-    gridRow: "3 / 4"
-  },
-  {
-    gridColumn: "3 / 4",
-    gridRow: "3 / 4"
-  },
-  {
-    gridColumn: "4 / 5",
-    gridRow: "start_rows"
-  },
-  {
-    gridColumn: "1 / 3",
-    gridRow: "4 / 5"
-  },
-  {
-    gridColumn: "3 / 4",
-    gridRow: "4 / 5"
-  },
-  {
-    gridColumn: "4 / 5",
-    gridRow: "4 / 5"
-  },
-  {
-    gridColumn: "1 / 3",
-    gridRow: "5 / 6"
-  },
-  {
-    gridColumn: "3 / 4",
-    gridRow: "5 / 6"
-  },
-  {
-    gridColumn: "4 / 5",
-    gridRow: "5 / 6"
-  },  
-  {
-    gridColumn: "1 / 5",
-    gridRow: "start_footer / end_footer"
-  } 
 ];
 
 export default [
@@ -117,9 +50,7 @@ export default [
     component: Grid,
     props: { 
       typeArea: true,
-      gridTemplateArea, 
-      confGridArea, 
-      confGridRowColumns
+      dataGrid
     } 
   } 
 ];

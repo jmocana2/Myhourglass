@@ -2,14 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledGrid, StyledGridItem } from './styles'
 
-function Grid({ gridTemplateArea, typeArea, confGridArea, confGridRowColumns, content }){
+function Grid({ typeArea, dataGrid }){
   return (
-    <StyledGrid typeArea={typeArea} gridTemplateArea={gridTemplateArea}>
+    <StyledGrid typeArea={typeArea}>
       {
-        typeArea ?
-          confGridArea.map(item => (<StyledGridItem typeArea={typeArea} area={item.area}>{item.content}</StyledGridItem>))
-        :
-          confGridRowColumns.map(item => (<StyledGridItem typeArea={typeArea} confGridRowColumns={confGridRowColumns}>{item.content}</StyledGridItem>))
+        dataGrid.map(item => (<StyledGridItem typeArea={typeArea}>{item.content}</StyledGridItem>))          
       }
     </StyledGrid>
   )
@@ -17,29 +14,16 @@ function Grid({ gridTemplateArea, typeArea, confGridArea, confGridRowColumns, co
 
 Grid.propTypes = {
   typeArea: PropTypes.bool,
-  gridTemplateArea: PropTypes.arrayOf(    
-    PropTypes.string
-  ),  
-  confGridRowColumns: PropTypes.arrayOf(    
+  dataGrid: PropTypes.arrayOf(
     PropTypes.shape({
-      gridRow: PropTypes.string,
-      gridColumn: PropTypes.string,
       content: PropTypes.node
-    })   
-  ), 
-  confGridArea: PropTypes.arrayOf(
-    PropTypes.shape({
-      gridItem: PropTypes.shape({
-        area: PropTypes.string,
-        content: PropTypes.node
-      })       
-    })   
+    })  
   ),  
 };
 
 Grid.defaultProps = {
-  confGrid: undefined,
-  typeArea: false
+  typeArea: false,
+  dataGrid: undefined
 };
 
 export default Grid 
